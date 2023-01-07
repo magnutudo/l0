@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Данные тут, забирай!</h1>
+    <h2> {{ .info }} </h2>
+
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            color: rgb(213, 13, 10);
+        }
+
+
+
+        body {
+            background-color: black;
+
+        }
+
+        h2 {
+            background: rgb(158, 10, 203);
+            background: -moz-linear-gradient(0deg, rgba(158, 10, 203, 0.8661682812773547) 0%, rgba(176, 182, 27, 1) 99%);
+            background: -webkit-linear-gradient(0deg, rgba(158, 10, 203, 0.8661682812773547) 0%, rgba(176, 182, 27, 1) 99%);
+            background: linear-gradient(0deg, rgba(158, 10, 203, 0.8661682812773547) 0%, rgba(176, 182, 27, 1) 99%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e0acb", endColorstr="#b0b61b", GradientType=1);
+            border: 2px solid darkgreen;
+            max-width: 600px;
+            text-align: center;
+            word-spacing:10px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 100px;
+            padding: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</body>
+<script>
+    let info = JSON.parse(document.querySelector('h2').innerHTML)
+</script>
+
+</html>
